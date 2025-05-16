@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Shoppng_Tutorial.props" />
+</Project>

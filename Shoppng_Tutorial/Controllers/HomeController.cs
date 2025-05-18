@@ -1,21 +1,27 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Shoppng_Tutorial.Models;
+using Shoppng_Tutorial.Repository;
 
 namespace Shoppng_Tutorial.Controllers
 {
     public class HomeController : Controller
     {
+
+        private readonly DataContext _dataContext;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DataContext dataContext)
         {
             _logger = logger;
+            _dataContext = dataContext;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var products = _dataContext.Products.Include("Category").Include("Brand").ToList();
+            return View(products);
         }
 
         public IActionResult Privacy()

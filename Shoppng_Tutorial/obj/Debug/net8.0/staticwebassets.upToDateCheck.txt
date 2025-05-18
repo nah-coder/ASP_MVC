@@ -7,7 +7,13 @@ wwwroot\css\price-range.css
 wwwroot\css\responsive.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\aosominam.jpg
+wwwroot\images\aothunnu.jpg
+wwwroot\images\avatar.jpg
 wwwroot\images\gallery1.jpg
+wwwroot\images\logo1.png
+wwwroot\images\logo2.png
+wwwroot\images\share.png
 wwwroot\js\bootstrap.min.js
 wwwroot\js\contact.js
 wwwroot\js\gmaps.js

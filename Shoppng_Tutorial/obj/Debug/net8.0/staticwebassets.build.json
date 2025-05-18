@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RhhH56Ny6+moNagj9jxTEroA7zN0xoUe+WocIT4y5t0=",
+  "Hash": "W3ljek/2ttBYvNzOErRrsV5Azh7H6OG4NZ6EddAXIy8=",
   "Source": "Shoppng_Tutorial",
   "BasePath": "_content/Shoppng_Tutorial",
   "Mode": "Default",
@@ -248,6 +248,69 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aosominam.jpg",
+      "SourceId": "Shoppng_Tutorial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\",
+      "BasePath": "_content/Shoppng_Tutorial",
+      "RelativePath": "images/aosominam#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2oqn4vngmf",
+      "Integrity": "wrYhlZlKpnkKflL1BAoXyYzKxbe6Mp54eWXVQVCZXlo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aosominam.jpg"
+    },
+    {
+      "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aothunnu.jpg",
+      "SourceId": "Shoppng_Tutorial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\",
+      "BasePath": "_content/Shoppng_Tutorial",
+      "RelativePath": "images/aothunnu#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6a9gum5hxl",
+      "Integrity": "AueGNN1Ps/TjElUZWpHqI5g/S57K+sfH1VzlMAg6HGE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aothunnu.jpg"
+    },
+    {
+      "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\avatar.jpg",
+      "SourceId": "Shoppng_Tutorial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\",
+      "BasePath": "_content/Shoppng_Tutorial",
+      "RelativePath": "images/avatar#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ltfr8yrqfa",
+      "Integrity": "J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatar.jpg"
+    },
+    {
       "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\gallery1.jpg",
       "SourceId": "Shoppng_Tutorial",
       "SourceType": "Discovered",
@@ -267,6 +330,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\gallery1.jpg"
+    },
+    {
+      "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo1.png",
+      "SourceId": "Shoppng_Tutorial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\",
+      "BasePath": "_content/Shoppng_Tutorial",
+      "RelativePath": "images/logo1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l0exj3j44b",
+      "Integrity": "yyu65RWvfOio8OtHzhfwmpu7/grZQzIeWHakR8RsJpo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo1.png"
+    },
+    {
+      "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo2.png",
+      "SourceId": "Shoppng_Tutorial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\",
+      "BasePath": "_content/Shoppng_Tutorial",
+      "RelativePath": "images/logo2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mrn51pne5a",
+      "Integrity": "kpzGRV1w6sZA15N6IRgeew7rLMXGp2obVvpE/Xryn80=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo2.png"
+    },
+    {
+      "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\share.png",
+      "SourceId": "Shoppng_Tutorial",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\",
+      "BasePath": "_content/Shoppng_Tutorial",
+      "RelativePath": "images/share#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "quu568wvz5",
+      "Integrity": "ji4Km3Uqo1eJ1xFNkJto1EorI5pivuWx9E5S7mfLRz4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\share.png"
     },
     {
       "Identity": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\js\\bootstrap.min.js",
@@ -2416,6 +2542,252 @@
       ]
     },
     {
+      "Route": "images/aosominam.2oqn4vngmf.jpg",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aosominam.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wrYhlZlKpnkKflL1BAoXyYzKxbe6Mp54eWXVQVCZXlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2oqn4vngmf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/aosominam.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wrYhlZlKpnkKflL1BAoXyYzKxbe6Mp54eWXVQVCZXlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/aosominam.jpg",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aosominam.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wrYhlZlKpnkKflL1BAoXyYzKxbe6Mp54eWXVQVCZXlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wrYhlZlKpnkKflL1BAoXyYzKxbe6Mp54eWXVQVCZXlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/aothunnu.6a9gum5hxl.jpg",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aothunnu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AueGNN1Ps/TjElUZWpHqI5g/S57K+sfH1VzlMAg6HGE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6a9gum5hxl"
+        },
+        {
+          "Name": "label",
+          "Value": "images/aothunnu.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AueGNN1Ps/TjElUZWpHqI5g/S57K+sfH1VzlMAg6HGE="
+        }
+      ]
+    },
+    {
+      "Route": "images/aothunnu.jpg",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aothunnu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AueGNN1Ps/TjElUZWpHqI5g/S57K+sfH1VzlMAg6HGE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AueGNN1Ps/TjElUZWpHqI5g/S57K+sfH1VzlMAg6HGE="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatar.jpg",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatar.ltfr8yrqfa.jpg",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ltfr8yrqfa"
+        },
+        {
+          "Name": "label",
+          "Value": "images/avatar.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3el/jDtQvS/YDy5sScr0WU5UUPnumLF5VITQxPLQkA="
+        }
+      ]
+    },
+    {
       "Route": "images/gallery1.90zyl5zv8k.jpg",
       "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\gallery1.jpg",
       "Selectors": [],
@@ -2494,6 +2866,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-uT5J7GgMbI0GcPgY4FQFplJugU9EHl1yDgAfgKCWCkM="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo1.l0exj3j44b.png",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yyu65RWvfOio8OtHzhfwmpu7/grZQzIeWHakR8RsJpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l0exj3j44b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yyu65RWvfOio8OtHzhfwmpu7/grZQzIeWHakR8RsJpo="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo1.png",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yyu65RWvfOio8OtHzhfwmpu7/grZQzIeWHakR8RsJpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yyu65RWvfOio8OtHzhfwmpu7/grZQzIeWHakR8RsJpo="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo2.mrn51pne5a.png",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "156533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kpzGRV1w6sZA15N6IRgeew7rLMXGp2obVvpE/Xryn80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrn51pne5a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kpzGRV1w6sZA15N6IRgeew7rLMXGp2obVvpE/Xryn80="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo2.png",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "156533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kpzGRV1w6sZA15N6IRgeew7rLMXGp2obVvpE/Xryn80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kpzGRV1w6sZA15N6IRgeew7rLMXGp2obVvpE/Xryn80="
+        }
+      ]
+    },
+    {
+      "Route": "images/share.png",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\share.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7682"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ji4Km3Uqo1eJ1xFNkJto1EorI5pivuWx9E5S7mfLRz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ji4Km3Uqo1eJ1xFNkJto1EorI5pivuWx9E5S7mfLRz4="
+        }
+      ]
+    },
+    {
+      "Route": "images/share.quu568wvz5.png",
+      "AssetFile": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\share.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7682"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ji4Km3Uqo1eJ1xFNkJto1EorI5pivuWx9E5S7mfLRz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:55:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "quu568wvz5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/share.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ji4Km3Uqo1eJ1xFNkJto1EorI5pivuWx9E5S7mfLRz4="
         }
       ]
     },
@@ -8014,7 +8632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 15:09:30 GMT"
+          "Value": "Sat, 17 May 2025 14:01:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8051,7 +8669,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 15:09:30 GMT"
+          "Value": "Sat, 17 May 2025 14:01:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8096,7 +8714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 15:09:30 GMT"
+          "Value": "Sat, 17 May 2025 14:01:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8141,7 +8759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 15:09:30 GMT"
+          "Value": "Sat, 17 May 2025 14:01:28 GMT"
         },
         {
           "Name": "Cache-Control",

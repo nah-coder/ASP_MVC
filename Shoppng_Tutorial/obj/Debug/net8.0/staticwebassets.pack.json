@@ -41,8 +41,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aosominam.jpg",
+      "PackagePath": "staticwebassets\\images\\aosominam.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\aothunnu.jpg",
+      "PackagePath": "staticwebassets\\images\\aothunnu.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\avatar.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar.jpg"
+    },
+    {
       "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\gallery1.jpg",
       "PackagePath": "staticwebassets\\images\\gallery1.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo1.png",
+      "PackagePath": "staticwebassets\\images\\logo1.png"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\logo2.png",
+      "PackagePath": "staticwebassets\\images\\logo2.png"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\images\\share.png",
+      "PackagePath": "staticwebassets\\images\\share.png"
     },
     {
       "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\js\\bootstrap.min.js",

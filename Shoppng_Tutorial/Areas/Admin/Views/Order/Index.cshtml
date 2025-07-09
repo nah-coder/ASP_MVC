@@ -1,0 +1,99 @@
+﻿@model IEnumerable<OrderModel>
+
+@{
+    ViewData["title"] = "Order Listed";
+
+
+}
+<h3>Danh Sách Đơn Hàng</h3>
+
+
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Mã Đơn Hàng</th>
+            <th scope="col">Phí Vận Chuyển</th>
+            <th scope="col">Mã Giảm Giá</th>
+            <th scope="col">Tên Khách Hàng</th>
+            <th scope="col">Ngày Đặt Hàng</th>
+            <th scope="col">Địa Chỉ</th>
+            <th scope="col">Phương Thức Thanh Toán</th>
+            <th scope="col">Trạng Thái Đơn Hàng</th>
+            <th scope="col">Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.OrderCode</td>
+                <td>@item.ShippingCost.ToString("#,##0 VNĐ")</td>
+                <td>@item.CouponCode</td>
+                <td>@item.UserName</td>
+
+                <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
+                <td>@item.ShippingAddress</td>
+                <td>
+                    @{
+                        string method = item.PaymentMethod ?? "COD";
+                        string methodName = method;
+                        string methodId = "";
+
+                        if (method.Contains(" "))
+                        {
+                            var split = method.Split(" ");
+                            methodName = split[0];
+                            methodId = split[1];
+                        }
+                    }
+
+                    @if (methodName == "COD")
+                    {
+                        <span class="text text-primary">Thanh toán khi nhận hàng</span>
+                    }
+                    else if (methodName == "MOMO")
+                    {
+                        <span class="text">MOMO</span>
+                        <a asp-action="PaymentMomoInfo" asp-route-orderId="@methodId" asp-controller="Order">
+                            <span class="text text-danger">@methodId</span>
+                        </a>
+                    }
+                    else if (methodName == "VnPay")
+                    {
+                        <span class="text">VnPay</span>
+                        <a asp-action="PaymentVnpayInfo" asp-route-orderId="@methodId" asp-controller="Order">
+                            <span class="text text-danger">@methodId</span>
+                        </a>
+                    }
+                </td>
+
+
+                <td>
+                    @if (item.Status == 1)
+                    {
+                        <span class="text text-success">Đơn hàng mới</span>
+                    }
+                    else if (item.Status == 2)
+                    {
+                        <span class="text text-primary">Đã giao hàng</span>
+                    }
+                    else
+                    {
+
+                        <span class="text text-danger">Đã hủy</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-ordercode="@item.OrderCode">Xem Đơn Hàng</a>
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Order" asp-route-ordercode="@item.OrderCode">Xóa</a>
+                </td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>
+

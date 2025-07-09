@@ -1,0 +1,39 @@
+﻿@model IEnumerable<OrderDetail>
+
+@{
+    ViewData["title"] = "Order Listed";
+
+
+}
+<h3>Danh Sách Đơn Hàng</h3>
+
+
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Mã Đơn Hàng</th>
+            <th scope="col">Phí Vận Chuyển</th>
+            <th scope="col">Mã Giảm Giá</th>
+            <th scope="col">Tên Khách Hàng</th>
+            <th scope="col">Ngày Đặt Hàng</th>
+            <th scope="col">Địa Chỉ</th>
+            <th scope="col">Phương Thức Thanh Toán</th>
+            <th scope="col">Trạng Thái Đơn Hàng</th>
+            <th scope="col">Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.OrderCode</td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>
+

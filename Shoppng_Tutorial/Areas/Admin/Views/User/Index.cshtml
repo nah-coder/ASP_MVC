@@ -1,0 +1,53 @@
+﻿@model List<dynamic>
+
+
+@{
+    ViewData["title"] = "Listed User";
+
+
+}
+<h3>Danh Sách Khách Hàng</h3>
+<a class="btn btn-primary" asp-action="Create" asp-controller="User">Thêm Khách Hàng</a>
+
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th scope="col">Mã</th>
+            <th scope="col">Tên Khách Hàng</th>
+            <th scope="col">Email</th>
+            <th scope="col">Số Điện Thoại</th>
+            <th scope="col">Quyền Hạn</th>
+            <th scope="col">Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var u in Model)
+        {
+            <tr>
+                <th scope="row">@u.Id</th>
+                <td>@u.UserName</td>
+                <td>@u.Email</td>
+                <td>@u.PhoneNumber</td>
+                <td>@u.RoleName</td>
+                <td>
+                    @if (u.Id != ViewBag.LoggedInUserId)
+                    {
+                        @if (u.RoleName != "Admin")
+                        {
+                            <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="User" asp-route-Id="@u.Id">Cập Nhật</a>
+                            <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="User" asp-route-Id="@u.Id">Xóa</a>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+
+
+
+
+
+    </tbody>
+</table>
+
+

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Shoppng_Tutorial.Repository.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Shoppng_Tutorial.Models
@@ -34,8 +35,8 @@ namespace Shoppng_Tutorial.Models
 
         //public RatingModel Ratings { get; set; }
 
-        //[NotMapped]
-        //[FileExtension]
-        //public IFormFile? ImageUpload { get; set; }
+        [NotMapped]
+        [FileExtension]
+        public IFormFile? ImageUpload { get; set; }
     }
 }

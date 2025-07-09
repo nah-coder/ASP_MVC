@@ -2,7 +2,11 @@
   "Files": [
     {
       "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Shoppng_Tutorial.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Shoppng_Tutorial.psoimimn1n.bundle.scp.css"
+      "PackagePath": "staticwebassets\\Shoppng_Tutorial.pbhykva0i1.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\backend\\js\\site.js",
+      "PackagePath": "staticwebassets\\backend\\js\\site.js"
     },
     {
       "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\css\\animate.css",
@@ -335,6 +339,38 @@
     {
       "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\5716d314-577f-4956-b56c-7a9ca56d2051_133912478861644532.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\5716d314-577f-4956-b56c-7a9ca56d2051_133912478861644532.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\aosominam.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\aosominam.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\aothunnu.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\aothunnu.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\avatar.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\avatar.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\gallery1.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\gallery1.jpg"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\logo1.png",
+      "PackagePath": "staticwebassets\\media\\products\\logo1.png"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\logo2.png",
+      "PackagePath": "staticwebassets\\media\\products\\logo2.png"
+    },
+    {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\share.png",
+      "PackagePath": "staticwebassets\\media\\products\\share.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Shoppng_Tutorial.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

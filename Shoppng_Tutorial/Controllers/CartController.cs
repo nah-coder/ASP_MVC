@@ -134,7 +134,26 @@ namespace Shoppng_Tutorial.Controllers
             TempData["success"] = "Xóa toàn bộ sả phẩm thành công";
             return RedirectToAction("Index");
         }
+        public async Task<IActionResult> Add(long Id)
+        {
+            ProductModel product = await _dataContext.Products.FindAsync(Id);
+            List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+            CartItemModel cartItems = cart.Where(c => c.ProductId == Id).FirstOrDefault();
 
+            if (cartItems == null)
+            {
+                cart.Add(new CartItemModel(product));
+            }
+            else
+            {
+                cartItems.Quantity += 1;
+            }
 
+            HttpContext.Session.SetJson("Cart", cart); //luu tru dl cart vao session
+
+            TempData["success"] = "Thêm sản phẩm vào giỏ hàng thành công";
+
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
     }
 }

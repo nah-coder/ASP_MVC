@@ -1,39 +1,118 @@
 ﻿@model IEnumerable<OrderDetail>
 
 @{
-    ViewData["title"] = "Order Listed";
+    ViewData["title"] = "Order Details";
+    decimal total = 0; //tổng
+    decimal subtotal = 0; //thành tiền
+}
 
+<!DOCTYPE htm>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chi Tiết Đơn Hàng</title>
+</head>
+<body>
+    <h3>Chi Tiết Đơn Hàng</h3>
+    <table class="table" id="detail_order">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Mã Giao Dịch</th>
+                <th>Tên Khách Hàng</th>
+                <th>Mã Giảm Giá</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+                <th>Tạm Tính</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                subtotal = item.Quantity * item.Price;
+                total += subtotal;
+                <tr>
+                    <input type="hidden" asp-for="@item.OrderCode" class="getId" />
+                    <td>@item.Id</td>
+                    <td>@item.OrderCode</td>
+                    <td>@item.UserName</td>
+                    <td>@ViewBag.Coupon</td>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Price.ToString("#, ##0 VNĐ")</td>
+                    <td>@item.Quantity</td>
+                    <td>@subtotal.ToString("#, ##0 VNĐ")</td>
+
+                </tr>
+            }
+            <tr>
+                <td><strong>Tổng cộng:</strong></td>
+                <td><strong>@((total + ViewBag.ShippingCost - @ViewBag.DiscountAmount).ToString("#, ##0 VNĐ"))</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Tiền hàng:</td>
+                <td>@total.ToString("#, ##0 VNĐ")</td>
+                <td>Phí Vận Chuyển: @ViewBag.ShippingCost.ToString("#, ##0 VNĐ")</td>
+                <td>
+                    @if (@ViewBag.Status != 3)
+                    {
+                        <select class="form-control select-update-order">
+                            <option value="1">Đơn hàng mới</option>
+                            <option value="2">Đã giao hàng</option>
+                            <option value="0">Đã hủy</option>
+                        </select>
+                    }
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+    <a asp-action="Index" asp-controller="Order">Quay lại</a>
+</body>
+</html>
+
+@section Scripts {
+    <script>
+        new DataTable('#detail_order', {
+            layout: {
+                topStart: {
+                    buttons: ['pdf', 'print']
+                }
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.select-update-order').change(function () {
+                var status = $(this).val();
+                var ordercode = $('.getId').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("UpdateOrder")",
+                    data: { status: status, ordercode: ordercode }, //send data to the server
+
+                    success: function (result) {
+                        if (result.success) {
+                            Swal.fire("Cập nhật đơn hàng thành công.");
+                        } else {
+                            Swal.fire("Cập nhật đơn hàng thất bại." + result.message);
+                        }
+                    },
+                    error: function (red, status, error) {
+                        console.error("Error updating order: ", error);
+                    }
+                });
+            });
+        });
+    </script>
 
 }
-<h3>Danh Sách Đơn Hàng</h3>
-
-
-<table class="table" id="myTable">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Mã Đơn Hàng</th>
-            <th scope="col">Phí Vận Chuyển</th>
-            <th scope="col">Mã Giảm Giá</th>
-            <th scope="col">Tên Khách Hàng</th>
-            <th scope="col">Ngày Đặt Hàng</th>
-            <th scope="col">Địa Chỉ</th>
-            <th scope="col">Phương Thức Thanh Toán</th>
-            <th scope="col">Trạng Thái Đơn Hàng</th>
-            <th scope="col">Hành Động</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <th scope="row">@item.Id</th>
-                <td>@item.OrderCode</td>
-            </tr>
-        }
 
 
 
-    </tbody>
-</table>
 

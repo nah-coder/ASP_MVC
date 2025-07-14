@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Shoppng_Tutorial.Areas.Admin.Repository;
 using Shoppng_Tutorial.Models;
 using Shoppng_Tutorial.Repository;
 
@@ -10,10 +11,15 @@ namespace Shoppng_Tutorial.Controllers
     public class CheckoutController : Controller
     {
         private readonly DataContext _dataContext;
-        public CheckoutController(DataContext context)
+        private readonly IEmailSender _emailSender;
+        public CheckoutController(IEmailSender emailSender, DataContext context)
         {
             _dataContext = context;
+            _emailSender = emailSender;
+            //_momoService = momoService;
+            //_vnPayService = vnPayService;
         }
+
 
         public async Task<IActionResult> Checkout(string PaymentMethod, string PaymentId)
         {
@@ -102,11 +108,11 @@ namespace Shoppng_Tutorial.Controllers
                 HttpContext.Session.Remove("Cart");
                 //Send mail order when success
                 //var receiver = "nhhuy.dhti15a3hn@sv.uneti.edu.vn";
-                //var receiver = userEmail;
-                //var subject = "Đặt hàng thành công";
-                //var message = "Đặt hàng thành công, trải nghiệm dịch vụ nhé.";
+                var receiver = userEmail;
+                var subject = "Đặt hàng thành công";
+                var message = "Đặt hàng thành công, trải nghiệm dịch vụ nhé.";
 
-                //await _emailSender.SendEmailAsync(receiver, subject, message);
+                await _emailSender.SendEmailAsync(receiver, subject, message);
 
                 TempData["success"] = "Đặt hàng thành công, vui lòng chờ duyệt đơn hàng";
                 return RedirectToAction("Index", "Cart");

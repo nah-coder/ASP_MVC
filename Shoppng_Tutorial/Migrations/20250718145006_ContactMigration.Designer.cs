@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Shoppng_Tutorial.Repository;
 
@@ -11,9 +12,11 @@ using Shoppng_Tutorial.Repository;
 namespace Shoppng_Tutorial.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20250718145006_ContactMigration")]
+    partial class ContactMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -283,27 +286,6 @@ namespace Shoppng_Tutorial.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("Shoppng_Tutorial.Models.CompareModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<long>("ProductId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Compare");
-                });
-
             modelBuilder.Entity("Shoppng_Tutorial.Models.ContactModel", b =>
                 {
                     b.Property<int>("Id")
@@ -520,27 +502,6 @@ namespace Shoppng_Tutorial.Migrations
                     b.ToTable("Sliders");
                 });
 
-            modelBuilder.Entity("Shoppng_Tutorial.Models.WishlistModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<long>("ProductId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Wishlist");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -592,17 +553,6 @@ namespace Shoppng_Tutorial.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Shoppng_Tutorial.Models.CompareModel", b =>
-                {
-                    b.HasOne("Shoppng_Tutorial.Models.ProductModel", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("Shoppng_Tutorial.Models.OrderDetail", b =>
                 {
                     b.HasOne("Shoppng_Tutorial.Models.ProductModel", "Product")
@@ -638,17 +588,6 @@ namespace Shoppng_Tutorial.Migrations
                     b.HasOne("Shoppng_Tutorial.Models.ProductModel", "Product")
                         .WithOne("Ratings")
                         .HasForeignKey("Shoppng_Tutorial.Models.RatingModel", "ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Shoppng_Tutorial.Models.WishlistModel", b =>
-                {
-                    b.HasOne("Shoppng_Tutorial.Models.ProductModel", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

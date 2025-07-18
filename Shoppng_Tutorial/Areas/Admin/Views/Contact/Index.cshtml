@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ContactModel>
+@{
+    ViewData["title"] = "Contact Info";
+
+
+}
+<h3>Liên Hệ</h3>
+
+<style>
+    .map-container iframe {
+        width: 200px !important;
+        height: 150px !important;
+    }
+
+    .map-container {
+        max-width: 200px;
+        max-height: 150px;
+        overflow: hidden;
+    }
+</style>
+
+
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Map</th>
+            <th scope="col">Email</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Số điện thoại</th>
+
+            <th scope="col">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td>@Html.Raw(@item.Description)</td>
+
+                <td>
+                    <div class="map-container">
+                        @Html.Raw(item.Map)
+                    </div>
+                </td>
+
+
+                <td>@item.Email</td>
+                <td><img src="~/media/logo/@item.LogoImg" width="120" height="120" /></td>
+                <td>@item.Phone</td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm" asp-controller="Contact">Cập Nhật</a>
+
+                </td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>
+

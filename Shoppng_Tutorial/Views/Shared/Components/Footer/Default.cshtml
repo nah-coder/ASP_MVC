@@ -1,0 +1,32 @@
+﻿
+
+<div class="row">
+	<!-- Logo + Mô tả -->
+	<div class="col-sm-3">
+		<div class="companyinfo text-center">
+			<p>
+				<img src="~/media/logo/@Model.LogoImg" width="200" height="150" />
+			</p>
+			<p style="margin-top: 30px;">
+				@Html.Raw(@Model.Description)
+			</p>
+		</div>
+	</div>
+
+	<!-- Map -->
+	<div class="col-sm-6">
+		<div style="margin-top: 20px;">
+			@Html.Raw(@Model.Map)
+		</div>
+	</div>
+
+	<!-- Contact Info -->
+	<div class="col-sm-3">
+		<h2>Liên hệ</h2>
+		<div style="margin-top: 20px">
+			<h5><b>Name : @Model.Name</b></h5>
+			<h5>Email : @Model.Email</h5>
+			<h5>Hotline : @Model.Phone</h5>
+		</div>
+	</div>
+</div>

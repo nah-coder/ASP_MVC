@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\intern\\Luvina\\Shoppng_Tutorial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|d:\\intern\\luvina\\shoppng_tutorial\\shoppng_tutorial\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|solutionrelative:shoppng_tutorial\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|d:\\intern\\luvina\\shoppng_tutorial\\shoppng_tutorial\\views\\shared\\_sliderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|solutionrelative:shoppng_tutorial\\views\\shared\\_sliderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|d:\\intern\\luvina\\shoppng_tutorial\\shoppng_tutorial\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|solutionrelative:shoppng_tutorial\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|d:\\intern\\luvina\\shoppng_tutorial\\shoppng_tutorial\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|solutionrelative:shoppng_tutorial\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|d:\\intern\\luvina\\shoppng_tutorial\\shoppng_tutorial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|solutionrelative:shoppng_tutorial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|d:\\intern\\luvina\\shoppng_tutorial\\shoppng_tutorial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5B1B3FF-D7DE-472B-A489-DB939A42DAF6}|Shoppng_Tutorial\\Shoppng_Tutorial.csproj|solutionrelative:shoppng_tutorial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedHeight": 293,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Product\\Details.cshtml",
-              "RelativeDocumentMoniker": "Shoppng_Tutorial\\Views\\Product\\Details.cshtml",
-              "ToolTip": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Product\\Details.cshtml",
-              "RelativeToolTip": "Shoppng_Tutorial\\Views\\Product\\Details.cshtml",
-              "ViewState": "AgIAANIAAAAAAAAAAAAiwN8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T15:55:02.114Z",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Shoppng_Tutorial\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Shoppng_Tutorial\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T17:28:56.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Shoppng_Tutorial\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Shoppng_Tutorial\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T15:52:06.974Z",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shoppng_Tutorial\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Shoppng_Tutorial\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T17:26:58.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Shoppng_Tutorial\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Shoppng_Tutorial\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T17:26:17.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_SliderPartial.cshtml",
+              "DocumentMoniker": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Shared\\_SliderPartial.cshtml",
+              "RelativeDocumentMoniker": "Shoppng_Tutorial\\Views\\Shared\\_SliderPartial.cshtml",
+              "ToolTip": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\Views\\Shared\\_SliderPartial.cshtml",
+              "RelativeToolTip": "Shoppng_Tutorial\\Views\\Shared\\_SliderPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T17:25:21.003Z",
               "EditorCaption": ""
             }
           ]

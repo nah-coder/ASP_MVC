@@ -1656,6 +1656,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\products\share.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\Sliders\a57ba7c5-9254-4b63-8484-0a6816de3668_hinh-nen-dep-22.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Shoppng_Tutorial</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Shoppng_Tutorial</BasePath>
+      <RelativePath>media/Sliders/a57ba7c5-9254-4b63-8484-0a6816de3668_hinh-nen-dep-22.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>be9b4art3e</Fingerprint>
+      <Integrity>rR/oz/b7A7Dt66kO6Rgwuw8myhRwosttvLFDEXouoFc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\Sliders\a57ba7c5-9254-4b63-8484-0a6816de3668_hinh-nen-dep-22.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Shoppng_Tutorial.pbhykva0i1.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Shoppng_Tutorial</SourceId>

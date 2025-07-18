@@ -341,6 +341,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\Sliders\\a57ba7c5-9254-4b63-8484-0a6816de3668_hinh-nen-dep-22.jpg",
+      "PackagePath": "staticwebassets\\media\\Sliders\\a57ba7c5-9254-4b63-8484-0a6816de3668_hinh-nen-dep-22.jpg"
+    },
+    {
       "Id": "D:\\intern\\Luvina\\Shoppng_Tutorial\\Shoppng_Tutorial\\wwwroot\\media\\products\\5716d314-577f-4956-b56c-7a9ca56d2051_133912478861644532.jpg",
       "PackagePath": "staticwebassets\\media\\products\\5716d314-577f-4956-b56c-7a9ca56d2051_133912478861644532.jpg"
     },

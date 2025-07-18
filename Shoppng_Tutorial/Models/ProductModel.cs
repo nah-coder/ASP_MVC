@@ -33,7 +33,7 @@ namespace Shoppng_Tutorial.Models
 
         public string Image { get; set; }
 
-        //public RatingModel Ratings { get; set; }
+        public RatingModel Ratings { get; set; }
 
         [NotMapped]
         [FileExtension]

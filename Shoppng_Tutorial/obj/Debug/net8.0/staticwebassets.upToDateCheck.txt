@@ -90,3 +90,4 @@ wwwroot\media\products\gallery1.jpg
 wwwroot\media\products\logo1.png
 wwwroot\media\products\logo2.png
 wwwroot\media\products\share.png
+wwwroot\media\Sliders\a57ba7c5-9254-4b63-8484-0a6816de3668_hinh-nen-dep-22.jpg

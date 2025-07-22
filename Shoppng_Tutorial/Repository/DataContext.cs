@@ -10,6 +10,8 @@ namespace Shoppng_Tutorial.Repository
         {
         }
         public DbSet<ProductModel> Products { get; set; }
+        public DbSet<ShippingModel> Shippings { get; set; }
+        public DbSet<ProductQuantityModel> ProductQuantities { get; set; }
         public DbSet<WishlistModel> Wishlist { get; set; }
         public DbSet<CompareModel> Compare { get; set; }
         public DbSet<ContactModel> Contact { get; set; }

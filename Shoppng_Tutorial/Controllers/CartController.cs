@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using Shoppng_Tutorial.Models;
 using Shoppng_Tutorial.Models.ViewModel;
 using Shoppng_Tutorial.Repository;
@@ -16,12 +17,48 @@ namespace Shoppng_Tutorial.Controllers
         }
         public IActionResult Index()
         {
+
             List<CartItemModel> cartItems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+
+            var shippingPriceCookie = Request.Cookies["ShippingPrice"];
+            decimal shippingPrice = 0;
+
+            if (shippingPriceCookie != null)
+            {
+                shippingPrice = JsonConvert.DeserializeObject<decimal>(shippingPriceCookie);
+            }
+
+            var couponCode = Request.Cookies["CouponTitle"];
+            decimal couponDiscount = 0;
+
+            //if (!string.IsNullOrEmpty(couponCode))
+            //{
+            //    var coupon = _dataContext.Coupons.FirstOrDefault(x => (x.Name + " | " + x.Description) == couponCode);
+            //    if (coupon != null && coupon.DateExpired >= DateTime.Now && coupon.Quantity > 0)
+            //    {
+            //        couponDiscount = coupon.Price;
+            //    }
+            //}
+
+            decimal total = cartItems.Sum(x => x.Quantity * x.Price) + shippingPrice;
+            total -= couponDiscount;
+
+            // Không cho tổng tiền nhỏ hơn 0
+            if (total < 0)
+                total = 0;
+
+            HttpContext.Session.SetString("GrandTotal", total.ToString());
+
+
             CartItemViewModel cartVM = new()
             {
                 CartItems = cartItems,
-                GrandTotal = cartItems.Sum(c => c.Quantity * c.Price),
+                GrandTotal = total,
+                ShippingPrice = shippingPrice,
+                CouponCode = couponCode,
+                DiscountAmount = couponDiscount
             };
+
             return View(cartVM);
         }
         public IActionResult Checkout()
@@ -155,5 +192,55 @@ namespace Shoppng_Tutorial.Controllers
 
             return Redirect(Request.Headers["Referer"].ToString());
         }
+        [HttpPost]
+        public async Task<IActionResult> GetShipping(ShippingModel shippingModel, string quan, string tinh, string phuong)
+        {
+            string fullAddress = $"{phuong}, {quan}, {tinh}";
+
+            var existingShipping = await _dataContext.Shippings
+                .FirstOrDefaultAsync(x => x.City == tinh && x.District == quan && x.Ward == phuong);
+
+            decimal shippingPrice = 0; // Set mặc định giá tiền
+
+            if (existingShipping != null)
+            {
+                shippingPrice = existingShipping.Price;
+            }
+            else
+            {
+                //Set mặc định giá tiền nếu ko tìm thấy
+                shippingPrice = 30000;
+            }
+            var shippingPriceJson = JsonConvert.SerializeObject(shippingPrice);
+            try
+            {
+                var cookieOptions = new CookieOptions
+                {
+                    HttpOnly = true,
+                    Expires = DateTimeOffset.UtcNow.AddMinutes(30),
+                    Secure = true // using HTTPS
+                };
+
+
+                HttpContext.Session.SetString("ShippingAddress", fullAddress);
+
+                Response.Cookies.Append("ShippingPrice", shippingPriceJson, cookieOptions);
+            }
+            catch (Exception ex)
+            {
+                //
+                Console.WriteLine($"Lỗi khi thêm cookie chứa giá vận chuyển: {ex.Message}");
+            }
+            return Json(new { shippingPrice });
+        }
+
+
+        [HttpGet]
+        public IActionResult DeleteShipping()
+        {
+            Response.Cookies.Delete("ShippingPrice");
+            return Json(new { success = true, message = "Xóa phí vận chuyển thành công" });
+        }
+
     }
 }

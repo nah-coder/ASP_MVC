@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shoppng_Tutorial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dfc5d2d9bb68e1cffae0a41c2100230cf871a71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14ade264593115ce21f1dd8c5d578be4f9854a2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shoppng_Tutorial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shoppng_Tutorial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

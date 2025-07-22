@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Models\NewFolder\" />
     <Folder Include="wwwroot\media\NewFolder\" />
     <Folder Include="wwwroot\media\Sliders\" />
   </ItemGroup>
